@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: light;
+    font-family: 'Manrope', system-ui, sans-serif;
+    background: #f7fcfb;
+    color: #0f172a;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #f8fdfd 0%, #eef7f3 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: rgba(38, 173, 177, 0.18);
+    color: #0f172a;
+}
+
+.glass-panel {
+    @apply border border-white/60 bg-white/80 backdrop-blur-xl;
+}
+
+.section-padding {
+    @apply px-4 py-20 sm:px-6 lg:px-8;
+}
+
+.container-shell {
+    @apply mx-auto w-full max-w-7xl;
+}
+
+.focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-ocean-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white;
+}
