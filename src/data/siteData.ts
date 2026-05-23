@@ -161,7 +161,7 @@ export const gallery = [
 ]
 
 export const contactDetails = [
-    { label: 'Telefone', value: '(11) 99920-1818', icon: Phone },
+    { label: 'Telefone', value: '(67) 99920-1818', icon: Phone },
     { label: 'WhatsApp', value: '(67) 99920-1818', icon: MessageCircle },
     { label: 'Email', value: 'contato@reinoanimal.com.br', icon: Mail },
     { label: 'Endereço', value: 'Av. dos Animais, 1200 - Jardim Verde, São Paulo/SP', icon: MapPin },
