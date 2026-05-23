@@ -41,7 +41,7 @@ export function Footer() {
                 <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
                     <p>© 2026 Reino Animal. Todos os direitos reservados.</p>
                     <a
-                        href="https://wa.me/5511998765432?text=Olá!%20Quero%20agendar%20um%20atendimento%20na%20Reino%20Animal."
+                        href="https://wa.me/5567999201818?text=Olá!%20Quero%20agendar%20um%20atendimento%20na%20Reino%20Animal."
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center gap-2 font-semibold text-sage-300 transition hover:text-white"

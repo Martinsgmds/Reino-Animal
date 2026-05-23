@@ -33,7 +33,7 @@ export function Header() {
 
                 <div className="hidden lg:block">
                     <a
-                        href="https://wa.me/5511998765432?text=Olá!%20Quero%20agendar%20um%20atendimento%20na%20Reino%20Animal."
+                        href="https://wa.me/5567999201818?text=Olá!%20Quero%20agendar%20um%20atendimento%20na%20Reino%20Animal."
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center gap-2 rounded-full bg-sage-500 px-5 py-3 text-sm font-bold text-white shadow-soft transition-transform duration-300 hover:-translate-y-0.5 hover:bg-sage-600 focus-ring"
@@ -71,7 +71,7 @@ export function Header() {
                         </a>
                     ))}
                     <a
-                        href="https://wa.me/5511998765432?text=Olá!%20Quero%20agendar%20um%20atendimento%20na%20Reino%20Animal."
+                        href="https://wa.me/5567999201818?text=Olá!%20Quero%20agendar%20um%20atendimento%20na%20Reino%20Animal."
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center justify-center gap-2 rounded-2xl bg-sage-500 px-4 py-3 text-sm font-bold text-white shadow-soft"

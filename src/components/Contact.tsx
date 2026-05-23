@@ -37,7 +37,7 @@ export function Contact() {
 
                         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                             <a
-                                href="https://wa.me/5511998765432?text=Olá!%20Quero%20agendar%20um%20atendimento%20na%20Reino%20Animal."
+                                href="https://wa.me/5567999201818?text=Olá!%20Quero%20agendar%20um%20atendimento%20na%20Reino%20Animal."
                                 target="_blank"
                                 rel="noreferrer"
                                 className="inline-flex items-center justify-center gap-2 rounded-full bg-sage-500 px-5 py-3 text-sm font-bold text-white shadow-glow transition hover:bg-sage-600 focus-ring"
@@ -75,10 +75,10 @@ export function Contact() {
 
                         <div className="grid gap-4 sm:grid-cols-2">
                             {[
-                                { title: 'Telefone', text: '(11) 3456-7890', icon: Phone },
+                                { title: 'Telefone', text: '(67) 99920-1818', icon: Phone },
                                 { title: 'Email', text: 'contato@reinoanimal.com.br', icon: Mail },
                                 { title: 'Horário', text: 'Segunda a sábado, 8h às 20h', icon: Clock3 },
-                                { title: 'Endereço', text: 'Av. dos Animais, 1200 - SP', icon: MapPin },
+                                { title: 'Endereço', text: 'Av. dos Animais, 1200 - Jardim Verde, São Paulo/SP', icon: MapPin },
                             ].map((item) => (
                                 <div key={item.title} className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
                                     <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-ocean-50 text-ocean-700">
