@@ -164,7 +164,7 @@ export const contactDetails = [
     { label: 'Telefone', value: '(67) 99920-1818', icon: Phone },
     { label: 'WhatsApp', value: '(67) 99920-1818', icon: MessageCircle },
     { label: 'Email', value: 'contato@reinoanimal.com.br', icon: Mail },
-    { label: 'Endereço', value: 'Av. dos Animais, 1200 - Jardim Verde, São Paulo/SP', icon: MapPin },
+    { label: 'Endereço', value: 'R. Monte Alegre, 4700 - Jardim Ouro Verde, Dourados - MS, 79830-070', icon: MapPin },
     { label: 'Horário', value: 'Segunda a sábado, 8h às 20h', icon: Clock3 },
 ]
 

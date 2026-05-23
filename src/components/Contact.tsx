@@ -46,7 +46,7 @@ export function Contact() {
                                 Abrir WhatsApp
                             </a>
                             <a
-                                href="https://maps.google.com/?q=Av.%20dos%20Animais%2C%201200%20-%20Jardim%20Verde%2C%20S%C3%A3o%20Paulo%2FSP"
+                                href="https://maps.google.com/?q=R.%20Monte%20Alegre%2C%204700%20-%20Jardim%20Ouro%20Verde%2C%20Dourados%20-%20MS%2C%2079830-070"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-700 shadow-sm transition hover:border-ocean-200 hover:text-ocean-700 focus-ring"
@@ -67,7 +67,7 @@ export function Contact() {
                         >
                             <iframe
                                 title="Mapa da Clínica Reino Animal"
-                                src="https://www.openstreetmap.org/export/embed.html?bbox=-46.6435%2C-23.5595%2C-46.6255%2C-23.5485&layer=mapnik&marker=-23.5540%2C-46.6345"
+                                src="https://www.google.com/maps?q=R.%20Monte%20Alegre%2C%204700%20-%20Jardim%20Ouro%20Verde%2C%20Dourados%20-%20MS%2C%2079830-070&output=embed"
                                 className="h-[360px] w-full border-0"
                                 loading="lazy"
                             />
@@ -78,7 +78,7 @@ export function Contact() {
                                 { title: 'Telefone', text: '(67) 99920-1818', icon: Phone },
                                 { title: 'Email', text: 'contato@reinoanimal.com.br', icon: Mail },
                                 { title: 'Horário', text: 'Segunda a sábado, 8h às 20h', icon: Clock3 },
-                                { title: 'Endereço', text: 'Av. dos Animais, 1200 - Jardim Verde, São Paulo/SP', icon: MapPin },
+                                { title: 'Endereço', text: 'R. Monte Alegre, 4700 - Jardim Ouro Verde, Dourados - MS, 79830-070', icon: MapPin },
                             ].map((item) => (
                                 <div key={item.title} className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
                                     <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-ocean-50 text-ocean-700">
