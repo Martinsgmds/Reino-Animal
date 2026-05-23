@@ -161,8 +161,8 @@ export const gallery = [
 ]
 
 export const contactDetails = [
-    { label: 'Telefone', value: '(11) 3456-7890', icon: Phone },
-    { label: 'WhatsApp', value: '(11) 99876-5432', icon: MessageCircle },
+    { label: 'Telefone', value: '(11) 99920-1818', icon: Phone },
+    { label: 'WhatsApp', value: '(67) 99920-1818', icon: MessageCircle },
     { label: 'Email', value: 'contato@reinoanimal.com.br', icon: Mail },
     { label: 'Endereço', value: 'Av. dos Animais, 1200 - Jardim Verde, São Paulo/SP', icon: MapPin },
     { label: 'Horário', value: 'Segunda a sábado, 8h às 20h', icon: Clock3 },
@@ -171,7 +171,7 @@ export const contactDetails = [
 export const socialLinks = [
     { label: 'Instagram', href: 'https://instagram.com', icon: Sparkles },
     { label: 'Facebook', href: 'https://facebook.com', icon: BadgeDollarSign },
-    { label: 'WhatsApp', href: 'https://wa.me/5511998765432', icon: MessageCircle },
+    { label: 'WhatsApp', href: 'https://wa.me/5567999201818', icon: MessageCircle },
 ]
 
 export const aboutParagraphs = [
