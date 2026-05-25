@@ -6,21 +6,53 @@ import { navigationLinks } from '../data/siteData'
 export function Header() {
     const [isOpen, setIsOpen] = useState(false)
 
-    const handleInternalNavClick = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
+    const scrollToAnchor = (href: string, duration: number) => {
+        const target = document.querySelector(href) as HTMLElement | null
+
+        if (!target) {
+            return
+        }
+
+        const startPosition = window.scrollY
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY - 112
+        const distance = targetPosition - startPosition
+        const startTime = performance.now()
+
+        const easeInOutCubic = (progress: number) =>
+            progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2
+
+        const animate = (currentTime: number) => {
+            const elapsed = currentTime - startTime
+            const progress = Math.min(elapsed / duration, 1)
+
+            window.scrollTo(0, startPosition + distance * easeInOutCubic(progress))
+
+            if (progress < 1) {
+                requestAnimationFrame(animate)
+            }
+        }
+
+        requestAnimationFrame(animate)
+    }
+
+    const handleDesktopNavClick = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
+        if (!href.startsWith('#')) {
+            return
+        }
+
+        event.preventDefault()
+
+        document.querySelector(href)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+
+    const handleMobileNavClick = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
         if (!href.startsWith('#')) {
             return
         }
 
         event.preventDefault()
         setIsOpen(false)
-
-        const target = document.querySelector(href)
-
-        if (target) {
-            requestAnimationFrame(() => {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' })
-            })
-        }
+        scrollToAnchor(href, 1100)
     }
 
     return (
@@ -41,7 +73,7 @@ export function Header() {
                         <a
                             key={item.href}
                             href={item.href}
-                            onClick={(event) => handleInternalNavClick(event, item.href)}
+                            onClick={(event) => handleDesktopNavClick(event, item.href)}
                             className="text-sm font-semibold text-slate-600 transition-colors hover:text-ocean-700 focus-ring"
                         >
                             {item.label}
@@ -82,7 +114,7 @@ export function Header() {
                         <a
                             key={item.href}
                             href={item.href}
-                            onClick={(event) => handleInternalNavClick(event, item.href)}
+                            onClick={(event) => handleMobileNavClick(event, item.href)}
                             className="rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-ocean-50 hover:text-ocean-700 focus-ring"
                         >
                             {item.label}
