@@ -1,10 +1,27 @@
-import { useState } from 'react'
+import { useState, type MouseEvent } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X, MessageCircleHeart } from 'lucide-react'
 import { navigationLinks } from '../data/siteData'
 
 export function Header() {
     const [isOpen, setIsOpen] = useState(false)
+
+    const handleInternalNavClick = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
+        if (!href.startsWith('#')) {
+            return
+        }
+
+        event.preventDefault()
+        setIsOpen(false)
+
+        const target = document.querySelector(href)
+
+        if (target) {
+            requestAnimationFrame(() => {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            })
+        }
+    }
 
     return (
         <header className="sticky top-0 z-50 border-b border-white/60 bg-white/75 backdrop-blur-xl">
@@ -24,6 +41,7 @@ export function Header() {
                         <a
                             key={item.href}
                             href={item.href}
+                            onClick={(event) => handleInternalNavClick(event, item.href)}
                             className="text-sm font-semibold text-slate-600 transition-colors hover:text-ocean-700 focus-ring"
                         >
                             {item.label}
@@ -64,7 +82,7 @@ export function Header() {
                         <a
                             key={item.href}
                             href={item.href}
-                            onClick={() => setIsOpen(false)}
+                            onClick={(event) => handleInternalNavClick(event, item.href)}
                             className="rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-ocean-50 hover:text-ocean-700 focus-ring"
                         >
                             {item.label}

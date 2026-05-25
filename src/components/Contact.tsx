@@ -5,7 +5,7 @@ import { SectionHeading } from './SectionHeading'
 
 export function Contact() {
     return (
-        <section id="contato" className="section-padding">
+        <section id="contato" className="section-padding scroll-mt-28 sm:scroll-mt-32 lg:scroll-mt-36">
             <div className="container-shell">
                 <SectionHeading
                     eyebrow="Contato"

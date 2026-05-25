@@ -18,7 +18,7 @@ export function Procedures() {
     })
 
     return (
-        <section id="procedimentos" className="section-padding">
+        <section id="procedimentos" className="section-padding scroll-mt-28 sm:scroll-mt-32 lg:scroll-mt-36">
             <div className="container-shell">
                 <SectionHeading
                     eyebrow="Procedimentos e valores"
@@ -49,8 +49,8 @@ export function Procedures() {
                                         type="button"
                                         onClick={() => setCategory(item)}
                                         className={`rounded-full px-4 py-2 text-sm font-semibold transition focus-ring ${isActive
-                                                ? 'bg-ocean-600 text-white shadow-glow'
-                                                : 'bg-ocean-50 text-ocean-700 hover:bg-ocean-100'
+                                            ? 'bg-ocean-600 text-white shadow-glow'
+                                            : 'bg-ocean-50 text-ocean-700 hover:bg-ocean-100'
                                             }`}
                                     >
                                         {item}

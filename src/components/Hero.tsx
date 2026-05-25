@@ -3,7 +3,7 @@ import { ArrowRight, ShieldCheck, HeartHandshake, Sparkles } from 'lucide-react'
 
 export function Hero() {
     return (
-        <section id="inicio" className="relative overflow-hidden bg-hero-radial">
+        <section id="inicio" className="relative overflow-hidden bg-hero-radial scroll-mt-28 sm:scroll-mt-32 lg:scroll-mt-36">
             <div className="absolute inset-0 -z-0 opacity-40">
                 <div className="absolute left-0 top-24 h-72 w-72 rounded-full bg-ocean-200/50 blur-3xl" />
                 <div className="absolute right-0 top-0 h-80 w-80 rounded-full bg-sage-200/50 blur-3xl" />
